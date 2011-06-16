@@ -43,7 +43,7 @@ public class FrontServlet extends HttpServlet {
 	}
 
 	private FrontCommand getCommand(HttpServletRequest request) {
-		
+		// コマンドの取得
 		String commandName = String.format("command.%sCommand", request.getParameter("command"));
 		Class<?> commandClass = null;
 
